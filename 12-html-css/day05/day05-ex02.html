@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    body {
+      margin: 0;
+      background-image: url(../image/back.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+    }
+    #container {
+      margin: 50px auto;
+      text-align: left;
+      padding: 50px;
+    }
+    #back {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.6);
+      top: 0; right: 0; bottom: 0; left: 0;
+    }
+    #over {
+      background-color: darkgray;
+      width: 400px;
+      padding: 2px;
+      border-radius: 3px;
+      height: 300px;
+      position: absolute;
+      top: 50%; left: 50%; 
+      transform: translate(-50%, -50%);
+    }
+    #over>h1 {
+      background-color: gray;
+      width: 400px;
+      text-align: center;
+      border-radius: 3px;
+      margin: 0px auto;
+      color: white;
+      line-height: 80px;
+      font-size: 3em;
+      font-weight: bold;
+    }
+    #over>p {
+      width: 300px;
+      flex-wrap: wrap;
+      margin: 10% 50px;
+      line-height: 1.6em;
+    }
+    #container>h1 {
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-bottom: 0.8em;
+    }
+    #container>p {
+      line-height: 1.4;
+      margin-bottom: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin est a augue malesuada, at laoreet dolor fringilla. Fusce blandit lorem quis magna placerat, vitae facilisis sapien maximus. Nullam in diam sed nisi lacinia fringilla non sit amet nibh. Pellentesque sapien mi, sagittis eu placerat eget, pretium vel nibh. Nam tristique augue finibus orci ornare, eget efficitur ante feugiat. Quisque viverra euismod diam egestas commodo. Duis consectetur libero convallis libero blandit, ac sodales purus pretium. Mauris ac maximus turpis, sit amet ultricies arcu. In eu metus tellus.</p>
+    <p>Aenean non ullamcorper urna. Praesent fermentum maximus eleifend. Sed vel est ac enim aliquam cursus. Duis blandit vel neque nec placerat. Donec eget molestie augue, in ultrices ligula. Nulla quis dapibus urna, tristique rhoncus orci. Donec nec sapien id ante commodo cursus ut vitae neque. Nulla cursus magna id maximus dictum. Sed fringilla ut nisi vel tincidunt. Donec ligula lorem, imperdiet at tempus et, rutrum in sem. Aliquam semper leo ac auctor sollicitudin. Aenean eget metus est. Fusce ultrices mattis risus, quis pellentesque arcu facilisis ac. Cras iaculis ut nisi vel ullamcorper. Quisque eu viverra sem. Ut maximus ex eget risus faucibus ultrices.</p>
+    <p>Sed tincidunt imperdiet nibh, vitae pharetra libero. Morbi cursus ligula sem, ac volutpat tortor semper vitae. Praesent accumsan, tellus eget dictum tincidunt, ligula tortor dapibus libero, sed lobortis velit mi eu ex. Suspendisse vel nunc nunc. Nulla porttitor et diam nec mollis. Mauris suscipit dictum mi et luctus. Fusce vitae neque posuere, lacinia nisl a, scelerisque urna. Vestibulum eget accumsan odio, vitae dictum massa. Vivamus non purus nec justo cursus tempor. Sed gravida urna vitae mi bibendum, eu ultricies nibh consequat. Etiam molestie rutrum erat, et varius neque euismod sit amet. Suspendisse auctor ipsum quis urna laoreet, quis consectetur purus ullamcorper. Mauris sed dolor ac libero elementum posuere. Praesent ultricies orci at varius hendrerit.</p>
+    <p>Cras laoreet turpis vel dolor eleifend, non dapibus tortor pharetra. Mauris condimentum dictum nibh non egestas. Pellentesque ac enim accumsan, mollis orci id, fringilla velit. Aliquam dolor quam, feugiat eget consectetur eu, consectetur nec metus. Vivamus non venenatis mauris, ut bibendum magna. Praesent a nunc dictum ex ornare lacinia. Sed interdum felis risus, non pulvinar mauris efficitur id. Vestibulum pulvinar, enim eget eleifend suscipit, sapien libero tincidunt lectus, eget commodo tortor erat a magna. Phasellus vitae lorem id odio luctus dignissim non id purus. Maecenas et nisl sed turpis ultricies hendrerit. Maecenas a iaculis ligula. Pellentesque et justo magna. Sed ornare nulla vitae ex dictum, ut pharetra elit lacinia. Sed ultricies lobortis ligula, sed vehicula purus lobortis et.</p>
+    <p>Nunc aliquet lectus quis odio facilisis faucibus. Mauris congue odio vitae fermentum ultricies. Phasellus tortor metus, tempor in pharetra eu, sollicitudin eu nisl. Cras mollis tellus felis, laoreet scelerisque leo tincidunt quis. Ut lobortis lacus vel enim ultricies, non pellentesque arcu laoreet. Nunc eleifend sodales augue, at lacinia mi. Nam pharetra ac ex ut porta.</p>
+  </div>
+  <div id="back">
+    <div id="over">
+      <h1>Alert!</h1>
+      <p>
+      이것은 메시지 창입니다.<br>
+      오버레이 레이어 위에 올라와있습니다.<br>
+      그래서 오버레이 레이어와 함께 나타났다 사라집니다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
