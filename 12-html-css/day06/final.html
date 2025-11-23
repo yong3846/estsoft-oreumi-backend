@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <title>One-True Layout</title>
+  <style>
+
+    header {
+    padding: 40px;
+    }
+    header > h1 {
+    font-size: 36px;
+    font-weight: 800;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.50);
+    }
+
+    body {
+    width: 1080px;
+    margin: 0 auto;
+    background: #fff;
+    }
+
+    nav.top-nav {
+    font-size: 16px;
+    background: #555;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.50);
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.50);
+    }
+    nav.top-nav ul {
+    display: flex;
+    padding: 0 10px;
+    }
+    nav.top-nav li {
+    line-height: 35px;
+    padding: 12px 20px;
+    color: white;
+    }
+    nav.top-nav .right {
+    margin-left: auto;
+    }
+
+    .layout {
+    display: flex;
+    padding: 6px 20px 0 20px;
+    gap: 40px;
+    }
+    .sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding-right: 0;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 20px 0;
+    }
+    .sidebar li {
+    margin: 10px 0;
+    font-size: 16px;
+    text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.30);
+    }
+
+    .content {
+    flex: 1;
+    margin-bottom: 20px;
+    }
+    .content > h1 {
+    margin: 40px 0;
+    font-size: 26px;
+    font-weight: 800;
+    }
+    .content > p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    }
+
+    footer {
+    margin: 0 20px;
+    padding: 40px 40px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    text-align: right;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>One-True Layout</h1>
+  </header>
+
+  <nav class="top-nav">
+    <ul>
+      <li>Home</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li class="right">Log in</li>
+      <li>Sign up</li>
+    </ul>
+  </nav>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+    </aside>
+
+  <main class="content">
+    <h1 class="section-title">Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lacus eget dui luctus, viverra interdum ex rhoncus. Proin tempus efficitur enim, et congue purus tincidunt quis. Vivamus lobortis felis tincidunt vehicula congue. Nullam iaculis dolor non urna cursus dictum. Vestibulum et ante elit. Sed malesuada, dui in lacinia consectetur, eros eros porta augue, eu volutpat mauris tortor ac felis. </p>
+
+    <p>Vestibulum in eros ac elit varius tristique. Praesent quis blandit augue, sed volutpat dolor. Sed pharetra dui sem, in gravida diam luctus scelerisque. Sed malesuada, turpis eget consequat pulvinar, odio dolor faucibus diam, eget suscipit dui nisi ac lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus tristique cursus.</p>
+
+    <p>Nunc rutrum neque tellus, et venenatis urna congue sed. In hac habitasse platea dictumst. Fusce mollis tellus tellus, vel euismod sem malesuada quis. Vivamus iaculis sodales leo nec malesuada. Donec dictum commodo quam vel vehicula. Suspendisse congue fringilla diam, non pellentesque odio accumsan a. Quisque sed lacinia felis. Integer risus dui, maximus id ultrices id, semper a est. Nam sodales, neque a tincidunt elementum, nulla lacus ullamcorper est, ut suscipit dolor arcu sit amet lectus. Praesent pharetra ut dolor quis elementum.</p>
+    
+  </main>
+
+  </div>
+
+  <footer>
+    © 2016–2024 Cheonha University.
+  </footer> 
+  
+</body>
+</html>
