@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        window.setTimeout(function () {
+            console.log('1. Time is gold.');
+        }, 2000);
+
+        window.setTimeout(function () {
+            console.log('2. No sweat, no sweet.');
+        }, 4000);
+
+        window.setTimeout(function () {
+            console.log('3. Asking costs noting.');
+        }, 6000);
+
+        window.setTimeout(function () {
+            console.log('4. Step by step goes a long way.');
+        }, 8000);
+
+        window.setTimeout(function () {
+            console.log('5. Yon will never know until you try.');
+        }, 10000);
+
+//---------------------------------------------------------------------------------------
+
+        const messages = [
+            '1. Time is gold.',
+            '2. No sweat, no sweet.',
+            '3. Asking costs noting.',
+            '4. Step by step goes a long way.',
+            '5. Yon will never know until you try.'
+        ];
+
+        let i = 0;
+
+        const timerId = window.setInterval(function() {
+            console.log(messages[i]);
+
+            i++;
+
+            if (i >= messages.length) {
+            window.clearInterval(timerId);
+            }
+        }, 2000);
+
+//---------------------------------------------------------------------------------------
+
+        const colors = ['red', 'green', 'blue'];
+        let j = 0;
+
+        window.setInterval(function() {
+            console.log(`background color: ${colors[j]}`);
+            j = (j + 1) % colors.length;
+        }, 2000);
+
+    </script>
+</body>
+</html>
