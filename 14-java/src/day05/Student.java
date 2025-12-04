@@ -61,5 +61,6 @@ public class Student {
         System.out.println("Name: " + name);
         System.out.printf("Average: %.2f\n", getAverage());
         System.out.println("Grade: " + getGrade());
+        System.out.println();
     }
 }
