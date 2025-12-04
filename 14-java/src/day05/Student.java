@@ -5,7 +5,14 @@ public class Student {
     private int korean;
     private int math;
     private int english;
+
+    private void validateScore(int score) {
+        if (score > 0 && score <= 100);
+    }
     public Student(String name, int korean, int math, int english) {
+        validateScore(korean);
+        validateScore(math);
+        validateScore(english);
         this.name = name;
         this.korean = korean;
         this.math = math;
@@ -27,13 +34,16 @@ public class Student {
     public String getName() {
         return name;
     }
-    public int Korean() {
+    public int getKorean() {
+        validateScore(korean);
         return korean;
     }
     public int getMath() {
+        validateScore(math);
         return math;
     }
     public int getEnglish() {
+        validateScore(english);
         return english;
     }
     public int getTotal() {
